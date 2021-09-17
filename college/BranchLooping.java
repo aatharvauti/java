@@ -8,7 +8,7 @@ public class BranchLooping
         // n is the number to perform operations on
         // b is the choice of operation to be performed
         String c;
-        // c for the choice to continue the program [y/n]
+        // c for the choice to con6tinue the program [y/n]
         int fact = 1;
         Scanner sc = new Scanner(System.in);
 
