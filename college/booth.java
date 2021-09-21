@@ -4,17 +4,22 @@ class booth
 	static Scanner sc=new Scanner(System.in);
 	public static void main(String args[])
 	{
-		int a[]={0,0,0,0};
-		int Q1=0,m1,q1;
+		int a[] = {0,0,0,0};
+		int Q1 = 0, m1, q1;
 		int count=4;
-		System.out.println("Enter the two nos");
-		m1=sc.nextInt();
-		q1=sc.nextInt();
-		int m[]=new int[4];
-		int m2[]=new int[4];
-		int q[]=new int[4];
+		
+		System.out.println("Enter 2 Numbers: ");
+		m1 = sc.nextInt();
+		q1 = sc.nextInt();
+
+		
+		int m[] = new int[4];
+		int m2[] = new int[4];
+		int q[] = new int[4];
+
 		decimal(m1,m);
-		decimal(q1,q); 
+		decimal(q1,q);
+
 		for(int i=count;i > 0;i--)
 		{
 			for(int j=0;j < 4;j++)
@@ -36,6 +41,7 @@ class booth
 				display(a,q,Q1,m);
 				System.out.println();
 			}
+
 			Q1=q[3];
 			shift(a,q);
 			display(a,q,Q1,m);
@@ -45,9 +51,9 @@ class booth
 	
 	static void decimal(int t,int m[])
 	{
-		int i=0,k=0,c=0;
-		int a[]=new int[100];
-		for(i=0;i < 3;i++,t=t/2)
+		int i=0, c = 0;
+		int a[] = new int[100];
+		for(i = 0; i < 3; i++, t = t/2)
 		{
 			a[i]=t%2; 
 			c++;
