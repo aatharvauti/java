@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": [
+        "college/package1",
+        "college"
+    ]
+}
