@@ -1,5 +1,5 @@
 import java.util.*;
-class matrix
+class Matrix
 {
     public static void main(String args[])
     {
