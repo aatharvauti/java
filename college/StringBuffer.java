@@ -15,7 +15,7 @@ class StringBuffer
 
         System.out.println("After setting char x at position 3: " + sb);
         System.out.println("After appending: " + sb.append(" in Mumbai"));
-        System.out.println("After inserting: " + sb.insert(19, "SAKEC"));
+        System.out.println("After inserting: " + sb.insert(19, "SAKEC "));
         System.out.println("After deleting: " + sb.delete(19,24));
     }
 }
