@@ -7,71 +7,71 @@ class StringAndMethods
 {
 	public static void main (String[] args)
 	{
-		String s= "IamLearningJAVA";
-		// or String s= new String ("GeeksforGeeks");
+		String s = "I use Java";
 
-		// Returns the number of characters in the String.
-		System.out.println("String length = " + s.length());
+		// .length returns the length of string
+		System.out.println("String length: " + s.length());
 
-		// Returns the character at ith index.
-		System.out.println("Character at 3rd position = "
-						+ s.charAt(3));
+		// .charAt returns the character at the given index.
+		System.out.println("Character at 4th position: " + s.charAt(4));
 
-		// Return the substring from the ith index character
-		// to end of string
-		System.out.println("Substring " + s.substring(3));
+		// .substring returns a substring 
+		// from the character at given index to the end of the string
+		System.out.println("Substring: " + s.substring(4));
 
-		// Returns the substring from i to j-1 index.
-		System.out.println("Substring = " + s.substring(2,5));
+		// .substring can also return the substring 
+		// from given index to a given index
+		// if specified
+		System.out.println("Substring: " + s.substring(2,5));
 
-		// Concatenates string2 to the end of string1.
-		String s1 = "IamLearning";
-		String s2 = "JAVA";
-		System.out.println("Concatenated string = " +
-							s1.concat(s2));
+		// .concat concatenates 2 strings
+		String s1 = "I like";
+		String s2 = "Java";
+		System.out.println("Concatenated string: " + s1.concat(s2));
 
-		// Returns the index within the string
-		// of the first occurrence of the specified string.
-		String s4 = "Learn Share Learn";
-		System.out.println("Index of Share " +
-						s4.indexOf("Share"));
+		// .indexOf returns the index within the string
+		// of the first occurrence of the specified string
+		String s4 = "Java works cross-platform";
+		System.out.println("Index of Java: " + s4.indexOf("Java"));
 
-		// Returns the index within the string of the
+		// .indexOf also returns the index within the string of the
 		// first occurrence of the specified string,
-		// starting at the specified index.
-		System.out.println("Index of a = " +
-						s4.indexOf('a',3));
+		// starting at the specified index
+		System.out.println("Index of a: " + s4.indexOf('a',3));
 
-		// Checking equality of Strings
-		Boolean out = "Iam".equals("IAM");
-		System.out.println("Checking Equality " + out);
-		out = "IamLearning".equals("IamLearning");
-		System.out.println("Checking Equality " + out);
-
-		out = "IamLearning".equalsIgnoreCase("I AmLearning");
-		System.out.println("Checking Equality " + out);
+		// .equals checks the equality of strings
+		Boolean out = "I like".equals("I LIKE"); // bool to return true or false
+		System.out.println("1. Checking Equality: " + out); // returns false
 		
-		//If ASCII difference is zero then the two strings are similar
-		int out1 = s1.compareTo(s2);
-		System.out.println("the difference between ASCII value is="+out1);
-		// Converting cases
-		String word1 = "IamLearningAJAVA";
-		System.out.println("Changing to lower Case " +
-							word1.toLowerCase());
+		out = "I like Java".equals("I like Java");
+		System.out.println("2. Checking Equality: " + out); // returns true
 
-		// Converting cases
-		String word2 = "IamLearningJAVA";
-		System.out.println("Changing to UPPER Case " +
-							word2.toUpperCase());
+		// .equalsIgnoreCase ignores case
+		out = "I like Java".equalsIgnoreCase("I LIKE JAVA");
+		System.out.println("3. Checking Equality: " + out); // returns true
 
-		// Trimming the word
-		String word4 = " Learn Share Learn ";
-		System.out.println("Trim the word " + word4.trim());
+		// if ASCII difference is zero then the two strings are similar
+		int out_diff = s1.compareTo(s2);
+
+		System.out.println("The difference between ASCII value is: "+ out_diff);
+
+		// .toLowerCase converts the string to Lowercase
+		String s5 = "I like Java";
+		System.out.println("Lower Case: " + s5.toLowerCase());
+
+		// .toUpperCase converts the string to UpperCase
+		String s6 = "I like Java";
+		System.out.println("Upper Case: " + s6.toUpperCase());
+
+		// .trim returns a copy of the string, with leading and trailing whitespace omitted
+		String s7 = "        I like Java ";
+		System.out.println("Trim: " + s7.trim());
 
 		// Replacing characters
-		String str1 = "feeksforfeeks";
-		System.out.println("Original String " + str1);
-		String str2 = "feeksforfeeks".replace('f' ,'g') ;
-		System.out.println("Replaced f with g -> " + str2);
+		String s8 = "Coxdpxay";
+		System.out.println("Original String: " + s8);
+
+		String s9 = s8.replace('x' ,'l') ;
+		System.out.println("Replaced x with l: " + s9);
 	}
 }
