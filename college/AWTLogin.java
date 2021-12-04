@@ -61,7 +61,7 @@ public class AWTLogin implements ActionListener
                 lb3.setText(String.valueOf("Welcome Back!"));
             }
             else {
-            lb3.setText(String.valueOf("Who the fuck are you?"));
+            lb3.setText(String.valueOf("INVALID USERNAME OR PASSWORD"));
             }
         }
     }
